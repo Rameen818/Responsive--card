@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      border: none;
+    }
+    .main {
+      display: flex;
+
+      padding: 20px;
+    }
+    /* px ki waja sy ya fixed ho rhi thi or responsive ma adjust ni ho rhi thi to isy percen ma 
+    kia taky ya apny normal form sy move ho to isy fixed ni bnana    */
+    img {
+      height: auto;
+      width: 87%;
+    }
+    .inp {
+      margin-top: 30px;
+      border-bottom: 10px;
+    }
+    .inp1 {
+      margin-bottom: 30px;
+    }
+    .inp2 {
+      margin-bottom: 30px;
+    }
+    .inp3 {
+      margin-bottom: 15px;
+    }
+    button {
+      color: rgb(245, 244, 244);
+      border: 20px;
+      background-color: black;
+      padding: 20px;
+      border-radius: 20px;
+    }
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 768px) {
+      .main {
+        flex-direction: column;
+      }
+      .inp input {
+        display: block;
+        margin-bottom: 15px;
+      }
+    }
+
+  </style>
+  <body>
+    <div class="main">
+      <div>
+        <img src="imglap.png" alt="" />
+      </div>
+      <div class="inp">
+        <div class="inp1">
+          <label for="name">
+            <input type="text" placeholder="Name*" />
+          </label>
+          <label for="phone">
+            <input type="tel" placeholder="Phone*" />
+          </label>
+        </div>
+        <div class="inp2">
+          <label for="Email" class="lab">
+            <input type="Email" placeholder="Email*" />
+          </label>
+          <select>
+            <option value="">Service you're looking for</option>
+            <option value="">Profit</option>
+            <option value="">Motivation</option>
+            <option value="">Permotion</option>
+          </select>
+        </div>
+        <div class="inp3">
+          <textarea name="comment" rows="4" cols="5">Message</textarea>
+        </div>
+        <button>GET A QUOTES</button>
+      </div>
+    </div>
+  </body>
+</html>
